@@ -42,105 +42,63 @@ img {
 	height: auto;
 }
 
-.main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 50px 0;
-    background-color: rgb(195, 196, 168);
-  }
-  
-main div{
-   max-width: 50%; 
+main {
+  display: flex;
+  flex-direction: row;
 }
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-  }
-  
-  .text {
-    width: 100%;
-    margin-right: 50px;
-    font-family: arial;
-      }
+.texto {
+  width: 50%;
+  padding: 0 20px;
+}
+.texto h2{
+  font-size: 38px;
+  color:rgb(141, 52, 89) ;
+  font-family: arial;
+}
 
-  .text h2 {
-    color: rgb(141, 52, 89);
-    font-size: 42px;
-  }
-
-  .text p {
-   font-size: 24px;
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-  }
-  
-  .card {
-    width: 220px;
-    margin-bottom: 40px;
-    background-color: white;
-
-  }
-  
-  .card img {
-    width: 600px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-  }
-  
-  .card h3 {
-    margin-top: 20px;
-    font-size: 24px;
-  }
-  
-  .card p {
-    margin-top: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    main {
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .text {
-      width: 45%;
-    }
-  
-    .cards {
-      width: 55%;
-      display: flex;
-      justify-content: flex-end;
-    }
-  
-    .card {
-      width: calc(33.33% - 20px);
-    }
- 
-    .grid {
-        grid-template-columns: 1fr;
-      }
-
-    footer {
+.texto p{
+  font-size: 24px;
+  font-family: arial;
+}
+.colunas {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.coluna {
+  width: 33.33%;
+  padding: 0 20px;
+}
+.coluna img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+    
+  footer {
         background-color: rgb(141, 52, 89);
         padding: 20px;
         width: 100%;
-        border: none;
-    }
+        border: none;  
+        color: aliceblue; 
+  }
 
-  
-}
+  .botao-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .botao {
+    background-color: rgb(141, 52, 89);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
